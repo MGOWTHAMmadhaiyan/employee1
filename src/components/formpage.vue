@@ -1,6 +1,8 @@
 <template>
     <div>
-        {{ active }}
+        <div align="center">
+            <h1>ENTER EMPLOYEE DETAILS</h1>
+        </div>
 
         <el-form ref="form" :model="form" label-width="150px" :rules="rules">
             <el-form-item label="Enter Name" prop="name">
@@ -153,7 +155,7 @@ export default {
                             this.tabledata.push(this.form)
                             this.savedata()
                             this.$router.push({
-                                name: 'tablePage'
+                                name: 'tablepage'
                             })
 
                         }
@@ -176,7 +178,7 @@ export default {
                             this.tabledata.splice(this.index, 1, this.form);
                             this.savedata(),
                                 this.$router.push({
-                                    name: 'tablePage',
+                                    name: 'tablepage',
 
                                 })
                         }
@@ -208,7 +210,7 @@ export default {
                 state: ''
             }
             this.$router.push({
-                name: 'tablePage',
+                name: 'tablepage',
 
             })
 

@@ -1,10 +1,14 @@
 <template>
+
     <div>
+        <div align="center">
+            <h1>EMPLOYEE DETAILS</h1>
+        </div>
         <div align="right">
             <el-button type="success" @click="add">ADD</el-button>
         </div>
 
-        <el-table :data="tabledata" style="width:100%" border>
+        <el-table :data="tabledata" style="width:100%" border id="space">
             <el-table-column prop="name" align="center" label="Name" width="160px">
             </el-table-column>
             <el-table-column prop="empid" align="center" label="Emp id" width="150">
@@ -44,7 +48,7 @@
 
 <script>
 import router from '@/router';
-import { v4 as uuidv4 } from 'uuid';
+
 
 export default {
     name: 'formchild',
@@ -67,7 +71,7 @@ export default {
     methods: {
         add() {
             router.push({
-                name: 'formPage',
+                name: 'formpage',
                 params: {
                     activeKey: this.isconform
                 }
@@ -102,7 +106,7 @@ export default {
         edit(index) {
             this.objcopy = Object.assign({}, this.tabledata[index])
             router.push({
-                name: 'formPage',
+                name: 'formpage',
                 params: {
                     index: index,
                     activeKey: false
@@ -117,4 +121,8 @@ export default {
 </script>
 
 <style>
+#space {
+
+    margin-top: 50px;
+}
 </style>
