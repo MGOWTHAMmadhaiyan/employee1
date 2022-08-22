@@ -7,16 +7,9 @@ import VueRouter from 'vue-router'
 import locale from 'element-ui/lib/locale/lang/en'
 
 
-
-
-
 Vue.use(ElementUI, { locale });
-
-
-
-
 Vue.use(VueRouter)
-Vue.use(ElementUI);
+
 
 Vue.config.productionTip = false
 

@@ -5,7 +5,7 @@
             <h1>EMPLOYEE DETAILS</h1>
         </div>
         <div align="right">
-            <el-button type="success" @click="add">ADD</el-button>
+            <el-button type="success" @click="add">+ADD</el-button>
         </div>
 
         <el-table :data="tabledata" style="width:100%" border id="space">
