@@ -3,7 +3,6 @@
         <div align="center">
             <h1>ENTER EMPLOYEE DETAILS</h1>
         </div>
-        <h1>tamil</h1>
         <el-form ref="form" :model="form" label-width="150px" :rules="rules">
             <el-form-item label="Enter Name" prop="name">
                 <el-input clearable v-model="form.name" placeholder="enter name"></el-input>
